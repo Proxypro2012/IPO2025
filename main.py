@@ -5,15 +5,16 @@ import tkinter as tk
 from tkinter import ttk
 from setup_utils import install_package
 
-# Please clone the ENTIRE REPOSITORY from github to run this script well! Faliure to do so may result in errors.
+# Please clone the ENTIRE REPOSITORY from github to run the calculator main script well! Faliure to do so may result in errors.
 
 
-install_package("sv_ttk")  
+
 
 try:
     import sv_ttk
 except ImportError:
     try:
+        install_package("sv_ttk")
         import sv_ttk
     except ImportError:
         sv_ttk = None
@@ -76,6 +77,10 @@ class CalculatorApp(ttk.Frame):
                 display_input.set("0.")
             elif len(memory) == 0 and is_operation(value):
                 return
+            elif memory[-1] == "0." and value == ".":
+                return
+            elif memory[-1][-1] == "." and value == ".":
+                return
             elif is_number(memory[-1]) and is_number(value) or value == ".":
                 memory[-1] = str(memory[-1]) + str(value)
                 display_input.set(memory[-1])
@@ -94,10 +99,17 @@ class CalculatorApp(ttk.Frame):
             elif is_operation(memory[-1]) and is_operation(value):
                 return
             elif value == "CE":
-                memory.pop()
-                display_input.set("0")
+                if len(memory[-1]) > 1:
+                    memory[-1] = memory[-1][:-1]
+                    display_input.set(memory[-1])
+                else:
+                    memory.pop()
+                    display_input.set("")
             elif value == "AC":
-                memory.clear()
+                if len(memory) > 0:
+                    memory.clear()
+                else:
+                    return
                 display_input.set("")
             elif value == "=":
                 try:
