@@ -23,4 +23,4 @@ A modern calculator built with Python and `tkinter` for the Internation Python O
 
 ```bash
 git clone https://github.com/Proxypro2012/IPO2025.git
-cd SmartCalculator
+cd IPO2025
