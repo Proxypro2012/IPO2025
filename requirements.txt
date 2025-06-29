@@ -1,0 +1,1 @@
+sv_ttk # Tkinter native windows 11 theme
