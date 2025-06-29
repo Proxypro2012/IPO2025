@@ -98,7 +98,7 @@ class CalculatorApp(ttk.Frame):
                 display_input.set("0")
             elif value == "AC":
                 memory.clear()
-                display_input.set("0")
+                display_input.set("")
             elif value == "=":
                 try:
                     expression = "".join(memory).replace("x", "*").replace("÷", "/").strip()
