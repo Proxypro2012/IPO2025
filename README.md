@@ -22,5 +22,5 @@ A modern calculator built with Python and `tkinter` for the Internation Python O
 ### 1. Clone or Download
 
 ```bash
-git clone https://github.com/yourusername/SmartCalculator.git
+git clone https://github.com/Proxypro2012/IPO2025.git
 cd SmartCalculator
