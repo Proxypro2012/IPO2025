@@ -5,6 +5,9 @@ import tkinter as tk
 from tkinter import ttk
 from setup_utils import install_package
 
+# Please clone the ENTIRE REPOSITORY from github to run this script well! Faliure to do so may result in errors.
+
+
 install_package("sv_ttk")  
 
 try:
