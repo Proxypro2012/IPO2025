@@ -25,4 +25,5 @@ A modern calculator built with Python and `tkinter` for the Internation Python O
 git clone https://github.com/Proxypro2012/IPO2025.git
 cd IPO2025
 ```
+  OR 
 Go to **Code** --> **Download as .zip**
