@@ -1,6 +1,6 @@
-# 🧮 Python Smart Calculator
+# 🧮 Python Calculator
 
-A modern calculator built with Python and `tkinter`, featuring smart input handling, real-time feedback, and a clean Sun Valley–styled interface using `sv_ttk`.
+A modern calculator built with Python and `tkinter` for the Internation Python Olympiad, featuring smart input handling, real-time feedback, and a clean Sun Valley–styled interface using `sv_ttk`.
 
 ## 💡 Features
 
