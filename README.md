@@ -26,4 +26,4 @@ git clone https://github.com/Proxypro2012/IPO2025.git
 cd IPO2025
 ```
   OR 
-Go to **Code** --> **Download as .zip**
+Go to **Code** --> **Download as .zip** (reccomended if git isn't installed)
